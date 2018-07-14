@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="FnB-Lm-i33" customClass="AlbumCollectionViewCell" customModule="CustomGallery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="154" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="154" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Fs-9V-cYs">
+                        <rect key="frame" x="0.0" y="144" width="154" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="hYd-3S-hBB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yw8-PF-gUi">
+                        <rect key="frame" x="0.0" y="0.0" width="154" height="144"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="8Fs-9V-cYs" firstAttribute="top" secondItem="yw8-PF-gUi" secondAttribute="bottom" id="Ere-0x-tUX"/>
+                <constraint firstItem="yw8-PF-gUi" firstAttribute="leading" secondItem="FnB-Lm-i33" secondAttribute="leading" id="HQr-XE-IiH"/>
+                <constraint firstAttribute="trailing" secondItem="8Fs-9V-cYs" secondAttribute="trailing" id="Q6D-wr-0Sa"/>
+                <constraint firstItem="8Fs-9V-cYs" firstAttribute="leading" secondItem="FnB-Lm-i33" secondAttribute="leading" id="bnx-JL-X3g"/>
+                <constraint firstItem="yw8-PF-gUi" firstAttribute="top" secondItem="FnB-Lm-i33" secondAttribute="top" id="nMN-Zm-UR0"/>
+                <constraint firstAttribute="bottom" secondItem="8Fs-9V-cYs" secondAttribute="bottom" id="srf-HO-iZo"/>
+                <constraint firstAttribute="trailing" secondItem="yw8-PF-gUi" secondAttribute="trailing" id="xvC-Kv-23M"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Wsx-HS-WxD"/>
+            <size key="customSize" width="154" height="137"/>
+            <connections>
+                <outlet property="albumImageView" destination="yw8-PF-gUi" id="tVv-DA-UEf"/>
+                <outlet property="albumNameLabel" destination="8Fs-9V-cYs" id="WQL-VM-km2"/>
+            </connections>
+            <point key="canvasLocation" x="-26" y="-23"/>
+        </collectionViewCell>
+    </objects>
+</document>
