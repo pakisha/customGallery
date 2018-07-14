@@ -13,12 +13,12 @@ extension PHAsset {
     
     // MARK: - Public methods
     
-    func getAssetThumbnail(size: CGRect) -> UIImage {
+    func getAssetThumbnail(size: CGSize) -> UIImage {
         let manager = PHImageManager.default()
         let option = PHImageRequestOptions()
         var thumbnail = UIImage()
         option.isSynchronous = true
-        manager.requestImage(for: self, targetSize: CGSize(width: size.width, height: size.height), contentMode: .aspectFit, options: option, resultHandler: {(result, info)->Void in
+        manager.requestImage(for: self, targetSize: size, contentMode: .aspectFill, options: option, resultHandler: {(result, info)->Void in
             thumbnail = result!
         })
         

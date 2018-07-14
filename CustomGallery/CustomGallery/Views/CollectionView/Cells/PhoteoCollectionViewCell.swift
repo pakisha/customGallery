@@ -35,7 +35,7 @@ class PhoteoCollectionViewCell: UICollectionViewCell {
     // MARK: - Public methods
     
     func setImage(_ asset: PHAsset) {
-        self.photoImageView.image = asset.getAssetThumbnail(size: CGRect(x: 0, y: 0, width: self.frame.width * 3, height: self.frame.height * 3))
+        self.photoImageView.image = asset.getAssetThumbnail(size: CGSize(width: self.frame.width * 3, height: self.frame.height * 3))
     }
     
     func setImage(_ image: UIImage) {

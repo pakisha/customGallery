@@ -13,7 +13,7 @@ extension PHAssetCollection {
     
     // MARK: - Public methods
     
-    func getCoverImgWithSize(_ size: CGRect) -> UIImage! {
+    func getCoverImgWithSize(_ size: CGSize) -> UIImage! {
         let assets = PHAsset.fetchAssets(in: self, options: nil)
         let asset = assets.firstObject
         return asset?.getAssetThumbnail(size: size)

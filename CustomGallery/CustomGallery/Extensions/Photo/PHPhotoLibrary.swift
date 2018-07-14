@@ -16,7 +16,7 @@ extension PHPhotoLibrary {
     static func checkAuthorizationStatus(completion: @escaping (_ status: Bool) -> Void) {
         if PHPhotoLibrary.authorizationStatus() == PHAuthorizationStatus.authorized {
             completion(true)
-        } else if PHPhotoLibrary.authorizationStatus() == PHAuthorizationStatus.notDetermined || PHPhotoLibrary.authorizationStatus() == PHAuthorizationStatus.denied {
+        } else {
             PHPhotoLibrary.requestAuthorization({ (newStatus) in
                 if newStatus == PHAuthorizationStatus.authorized {
                     completion(true)
