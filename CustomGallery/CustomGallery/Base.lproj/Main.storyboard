@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,8 +18,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niS-4o-6FC">
-                                <rect key="frame" x="164" y="136" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="163" y="136" width="48" height="30"/>
+                                <state key="normal" title="Gallery"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="EEj-V7-lrQ"/>
                                 </connections>
@@ -33,7 +32,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ciS-t5-H1g"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vtK-in-vXh"/>
+                    <navigationItem key="navigationItem" title="Home" id="vtK-in-vXh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9cm-RV-bSK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
